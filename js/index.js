@@ -73,8 +73,9 @@ let info_team = document.getElementById("info_team");
 
 toggle_info.addEventListener("click", () => {
   inner(info_team_inner, close_info);
-  setInterval(() => {
-    document.querySelector("#info_team").classList.add("active1");
+  setTimeout(() => {
+    document.querySelector("#info_team").style.transform =
+      "translate(-50%, -50%) scale(1)";
   }, 250);
 });
 
@@ -83,7 +84,7 @@ function inner(info_team_inner, close_info) {
   ele_inner.setAttribute("id", "inner");
   ele_inner.innerHTML = info_team_inner;
 
-  setInterval(() => {
+  setTimeout(() => {
     ele_inner.innerHTML += close_info;
   }, 2500);
 
@@ -91,11 +92,14 @@ function inner(info_team_inner, close_info) {
 }
 
 document.addEventListener("click", (e) => {
+  let xmark = document.getElementById("xmark");
   if (e.target == xmark) {
-    setInterval(() => {
-      document.querySelector("#info_team").classList.add("active2");
+    xmark.style.transform = "scale(0)";
+    setTimeout(() => {
+      document.querySelector("#info_team").style.transform =
+        "translate(-50%, -50%) scale(0)";
     }, 250);
-    setInterval(() => {
+    setTimeout(() => {
       document.querySelector("#inner").remove();
     }, 1500);
   }
