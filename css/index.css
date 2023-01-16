@@ -1,0 +1,132 @@
+:root {
+  --main: #48025a;
+  --primary: #d990e5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Arial;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  top: 0;
+  user-select: none;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg.jpg);
+}
+
+@media (min-width: 425px) {
+  body {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+  }
+
+  .container {
+    display: none;
+  }
+
+}
+
+.not_vilad {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 2;
+  color: var(--main);
+  text-align: center;
+}
+
+.container .items {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  transform: translateY(270px);
+  justify-content: space-between;
+}
+
+.container .items .card {
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  transition: .2s;
+  color: var(--main);
+  border-radius: 7px;
+  padding-block: 7px;
+  margin-bottom: 10px;
+  background: var(--primary);
+  box-shadow: 0 0 14px 2px inset var(--main);
+}
+
+.container .items .card:hover {
+  background: #a058ac;
+}
+
+.container .items .card:first-of-type,
+.container .items .card:nth-of-type(2) {
+  width: calc(50% - 5px);
+}
+
+.container .items .card:nth-child(3) {
+  width: 100%;
+}
+
+.brief {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--main);
+  text-align: center;
+  transform: translateY(290px);
+}
+
+.brief_btn {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 150px;
+  left: calc(50% - 60px);
+  font-size: 36px;
+  font-weight: 600;
+  border-radius: 50%;
+  line-height: 114px;
+  text-align: center;
+  color: var(--main);
+  background: var(--primary);
+  border: 5px solid var(--main);
+  box-shadow: 0 0 20px 0px inset var(--main);
+}
+
+.brief_count {
+  color: red;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 170px;
+  right: 50px;
+}
+
+.refresh {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  background: red;
+  position: absolute;
+  bottom: 120px;
+  right: 50px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+}

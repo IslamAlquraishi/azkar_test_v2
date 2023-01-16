@@ -1,0 +1,22 @@
+{
+  "name": "Azkar",
+  "short_name": "Azkar",
+  "start_url": "../index.html",
+  "display": "standalone",
+  "background_color": "#d990e5",
+  "theme_color": "#48025a",
+  "scope": "../.",
+  "description": "Azkar App by Islam Alquraishi.",
+  "icons": [
+    {
+      "src": "../images/playstore.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "../images/playstore.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
