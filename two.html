@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="install/manifest.json" />
+    <link rel="icon" href="images/playstore.png" />
+    <link rel="shortcut" href="images/playstore.png" />
+    <link rel="apple-touch-icon" href="images/playstore.png" />
+    <title>Azkar</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+      .test {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: var(--main);
+        transform: translate(-50%, -50%);
+      }
+      .test a {
+        width: 70px;
+        display: block;
+        cursor: pointer;
+        font-size: 22px;
+        border-radius: 7px;
+        transition: 0.2s;
+        padding: 5px 15px;
+        color: var(--main);
+        margin: 30px auto 0;
+        text-decoration: none;
+        background: var(--primary);
+      }
+      .test a:hover {
+        background: #b97bc3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="test">
+        <h2>هذه الصفحه تحت الإنشاء</h2>
+        <br />
+        <h2>This page is under construction</h2>
+        <a href="index.html">back</a>
+      </div>
+    </div>
+    <!-- <script src="install/index.js"></script> -->
+    <!-- <script src="install/install.js"></script> -->
+    <!-- <script src="js/index.js"></script> -->
+    <div id="load" class="load">
+      <div class="bg"></div>
+      <div class="loading">
+        <span style="--span: 1"></span>
+        <span style="--span: 2"></span>
+        <span style="--span: 3"></span>
+      </div>
+    </div>
+    <script>
+      let load = document.getElementById("load");
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          load.style.display = "none";
+        }, 350);
+      });
+    </script>
+  </body>
+</html>

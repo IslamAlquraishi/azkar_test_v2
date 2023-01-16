@@ -57,6 +57,15 @@ let info_team_inner = `
 
       <div>
         Desginer:
+        <a href="https://www.facebook.com/profile.php?id=100010393931304"
+          >ahmed ragab <i class="fa-brands fa-facebook"></i
+        ></a>
+        <img src="images/photo2.jpg" alt="Ahmed_Ragab.img" />
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+      </div>
+
+      <div>
+        Desginer:
         <a href="">sara khaled <i class="fa-brands fa-facebook"></i></a>
         <img src />
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
@@ -104,3 +113,49 @@ document.addEventListener("click", (e) => {
     }, 1500);
   }
 });
+
+let inner_loading = `
+      <div class="bg"></div>
+      <div class="loading">
+        <span style="--span: 1"></span>
+        <span style="--span: 2"></span>
+        <span style="--span: 3"></span>
+        <span style="--span: 4"></span>
+        <span style="--span: 5"></span>
+        <span style="--span: 6"></span>
+        <span style="--span: 7"></span>
+      </div>
+`;
+
+// let cards = document.querySelectorAll(".card");
+
+// cards.forEach((card) => {
+//   card.addEventListener("click", (e) => {
+//     // e.preventDefault();
+//     // console.log(e.target.dataset.href);
+//     // function retu() {
+//     //   return `/${ele}`;
+//     // }
+//     // let ele = e.target.dataset.href;
+//     // console.log(e.target.dataset.href);
+
+//     lo();
+
+//     // setTimeout(() => {
+//     //   window.location.replace(retu);
+//     // }, 500);
+//     // if (e.target.dataset.href == "one.html") {
+//     // window.location.replace("http://127.0.0.1:5500/one.html");
+//     // }
+//   });
+// });
+
+// function lo() {
+//   let load = document.createElement("div");
+//   load.setAttribute("class", "load");
+//   load.innerHTML = inner_loading;
+
+//   setTimeout(() => {
+//     document.querySelector("footer").before(load);
+//   }, 300);
+// }
